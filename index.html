@@ -1,151 +1,222 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#101d3a">
-  <meta name="description" content="Республиканский конкурс молодёжных медиацентров «МедиаВектор: Траектория роста». Условия, номинации, сроки и подача заявки.">
-  <title>МедиаВектор — Траектория роста</title>
+  <meta name="theme-color" content="#082b62">
+  <meta name="description" content="Республиканский конкурс молодёжных медиацентров профессиональных образовательных организаций Донецкой Народной Республики «МедиаВектор: Траектория роста».">
+  <title>МедиаВектор: Траектория роста</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <style>
+    :root{--navy:#082b62;--blue:#0756b8;--cyan:#28c5f4;--red:#f02e32;--orange:#ff5a1f;--ink:#10284b;--muted:#60718b;--pale:#edf7ff;--white:#fff}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Manrope,Arial,sans-serif;color:var(--ink);background:#f7fbff;line-height:1.65}
+    a{color:inherit}.wrap{width:min(1160px,92%);margin:auto}
+    .topline{height:7px;background:linear-gradient(90deg,var(--navy) 0 42%,var(--cyan) 42% 68%,var(--red) 68% 84%,var(--orange) 84%)}
+    header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);box-shadow:0 5px 24px #092c6010}
+    .nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:800;color:var(--navy);line-height:1.2}
+    .brand img{width:55px;height:55px;object-fit:contain;border-radius:12px}
+    .brand span{max-width:230px;font-size:14px}
+    nav{display:flex;align-items:center;gap:24px}nav a{text-decoration:none;font-size:14px;font-weight:800;color:#284365}nav a:hover{color:var(--blue)}
+    .nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 22px;border-radius:13px;text-decoration:none;font-weight:800;border:0;cursor:pointer;transition:.2s}
+    .nav-cta,.btn-primary{background:linear-gradient(110deg,var(--blue),#0879dc);color:white;box-shadow:0 10px 24px #0756b833}
+    .btn:hover,.nav-cta:hover{transform:translateY(-2px);filter:brightness(1.05)}
+    .hero{position:relative;overflow:hidden;color:white;background:radial-gradient(circle at 80% 20%,#1a77c7 0,transparent 30%),linear-gradient(125deg,#061e49,#083b80 58%,#087ac2);padding:70px 0 82px}
+    .hero:before{content:"";position:absolute;width:650px;height:650px;border:2px solid #ffffff18;border-radius:50%;right:-180px;top:-240px;box-shadow:0 0 0 35px #ffffff09,0 0 0 80px #ffffff07}
+    .hero-grid{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:35px;align-items:center}
+    .eyebrow{display:inline-flex;gap:10px;align-items:center;text-transform:uppercase;letter-spacing:.12em;font-weight:800;font-size:12px;color:#a9eaff}
+    .eyebrow:before{content:"";width:30px;height:3px;background:var(--orange);border-radius:4px}
+    h1{font-size:clamp(42px,6vw,76px);line-height:1.03;letter-spacing:-.045em;margin:20px 0}
+    h1 em{font-style:normal;color:#55d6ff}
+    .hero p{font-size:19px;max-width:660px;color:#e2f2ff;margin:0 0 28px}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:13px}
+    .btn-white{background:#fff;color:var(--navy)}.btn-outline{border:1px solid #ffffff80;color:#fff;background:#ffffff0d}
+    .hero-logo{display:flex;justify-content:center;align-items:center}
+    .hero-logo img{width:min(100%,410px);border-radius:30px;box-shadow:0 25px 65px #00133270}
+    .hero-note{margin-top:24px;font-size:13px;color:#b7d8f4}
+    .quickfacts{position:relative;margin-top:-30px;z-index:2}
+    .facts{display:grid;grid-template-columns:repeat(3,1fr);background:white;border-radius:20px;box-shadow:0 18px 45px #092c6015;overflow:hidden}
+    .fact{padding:23px 28px;border-right:1px solid #e8eef6}.fact:last-child{border:0}
+    .fact strong{display:block;color:var(--blue);font-size:23px;line-height:1.25}.fact span{font-size:14px;color:var(--muted)}
+    section{padding:78px 0}.section-kicker{color:var(--red);font-weight:800;letter-spacing:.12em;text-transform:uppercase;font-size:12px}
+    h2{font-size:clamp(30px,4vw,45px);line-height:1.15;letter-spacing:-.035em;color:var(--navy);margin:10px 0 18px}
+    .lead{font-size:18px;color:var(--muted);max-width:780px;margin:0}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:start}
+    .about-panel{padding:30px;border-radius:22px;background:linear-gradient(145deg,#e9f6ff,#fff);border:1px solid #d8ebfa}
+    .about-panel h3{margin:0 0 10px;font-size:22px;color:var(--navy)}
+    .about-panel p{margin:0;color:#536982}
+    .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:32px}
+    .card{background:white;border:1px solid #e4edf7;border-radius:20px;padding:28px;box-shadow:0 12px 30px #082b6209}
+    .card .number{display:inline-grid;place-items:center;width:42px;height:42px;border-radius:13px;background:#e5f6ff;color:var(--blue);font-weight:900}
+    .card h3{font-size:22px;color:var(--navy);margin:15px 0 8px}.card p{color:var(--muted);margin:0}
+    .detail{font-size:14px;margin-top:15px;padding-top:15px;border-top:1px solid #edf1f7;color:#4f6680}
+    .timeline{background:linear-gradient(135deg,#082b62,#0758a7);color:white}
+    .timeline h2{color:white}.timeline .section-kicker{color:#67dcff}.timeline .lead{color:#c9e3fa}
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:35px}
+    .step{padding:23px;border:1px solid #ffffff28;background:#ffffff0b;border-radius:18px}
+    .step b{display:block;font-size:22px;color:#63ddff;margin-bottom:8px}.step span{font-size:14px;color:#e2f1ff}
+    .requirements{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:30px}
+    .requirement{background:#fff;border-radius:18px;padding:24px;border-left:5px solid var(--cyan);box-shadow:0 10px 26px #082b620b}
+    .requirement h3{margin:0 0 8px;color:var(--navy);font-size:19px}.requirement p{margin:0;color:var(--muted)}
+    .score{margin-top:25px;padding:20px 24px;border-radius:16px;background:#fff4e9;color:#794019;font-weight:700}
+    .apply{background:linear-gradient(120deg,#e8f7ff,#f6fbff)}
+    .apply-box{display:flex;align-items:center;justify-content:space-between;gap:30px;padding:34px;background:white;border-radius:22px;box-shadow:0 16px 40px #082b6210}
+    .apply-box h3{font-size:25px;color:var(--navy);margin:0 0 7px}.apply-box p{margin:0;color:var(--muted)}
+    .btn-red{background:linear-gradient(110deg,var(--red),var(--orange));color:white;box-shadow:0 10px 24px #f0442b30;white-space:nowrap}
+    .results{background:#fff}.results-box{margin-top:28px;padding:38px;border-radius:24px;background:linear-gradient(130deg,#092b62,#0758a8);color:white;position:relative;overflow:hidden}
+    .results-box:after{content:"";position:absolute;width:260px;height:260px;border:35px solid #ffffff10;border-radius:50%;right:-60px;top:-95px}
+    .results-box h3{font-size:30px;margin:0 0 8px}.results-box p{color:#d5e9fb;max-width:680px;margin:0 0 23px}
+    .result-actions{display:flex;flex-wrap:wrap;gap:13px;position:relative;z-index:1}
+    .btn-download{background:white;color:var(--navy)}.btn-muted{background:#ffffff16;border:1px solid #ffffff70;color:white}
+    .results-hint{font-size:13px;color:#b8d8f3!important;margin-top:18px!important}
+    .docs{display:flex;flex-wrap:wrap;gap:14px;margin-top:25px}
+    .doc-link{display:inline-flex;align-items:center;gap:10px;padding:15px 19px;border:1px solid #dce8f4;border-radius:13px;background:white;text-decoration:none;font-weight:800;color:var(--navy)}
+    .doc-link:hover{border-color:var(--blue);color:var(--blue)}
+    footer{background:#061d43;color:#d9e9fa;padding:35px 0}
+    .footer-inner{display:flex;justify-content:space-between;gap:25px;align-items:center}.footer-inner strong{font-size:16px;color:white}.footer-inner p{margin:5px 0 0;font-size:13px;color:#a9c3df}
+    .footer-links{display:flex;gap:18px;flex-wrap:wrap}.footer-links a{font-size:13px;color:#d9e9fa}
+    @media(max-width:850px){nav{gap:12px}nav a{font-size:12px}.hero-grid{grid-template-columns:1fr}.hero-logo{justify-content:flex-start}.hero-logo img{width:260px}.steps{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:620px){.nav{padding:12px 0;align-items:flex-start}.brand span{font-size:12px}nav{display:none}.nav-cta{padding:11px 13px;font-size:12px}.hero{padding:52px 0 65px}.hero p{font-size:16px}.facts{grid-template-columns:1fr}.fact{border-right:0;border-bottom:1px solid #e8eef6;padding:16px 22px}.fact:last-child{border:0}section{padding:58px 0}.about-grid,.cards,.requirements{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.step{padding:17px}.apply-box{display:block;padding:25px}.apply-box .btn{margin-top:20px;width:100%}.results-box{padding:27px}.result-actions .btn{width:100%}.footer-inner{display:block}.footer-links{margin-top:18px}}
+  </style>
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="#top" aria-label="МедиаВектор — на главную">
-      <img class="brand-logo" src="logo.png" alt="Эмблема конкурса «МедиаВектор: Траектория роста»">
-    </a>
-    <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false">☰</button>
-    <nav class="nav" id="nav">
-      <a href="#about">О конкурсе</a><a href="#nominations">Номинации</a><a href="#rules">Условия</a><a href="#timeline">Этапы</a><a href="#results">Итоги</a><a class="nav-doc" href="polozhenie.pdf" target="_blank" rel="noopener">Положение ↗</a>
-      <a class="nav-cta" href="https://forms.yandex.ru/cloud/6addb4b84a052d85f35cf7c1" target="_blank" rel="noopener">Подать заявку ↗</a>
+<div class="topline"></div>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top"><img src="assets/emblem.jpg" alt="Эмблема конкурса"><span>МедиаВектор<br>Траектория роста</span></a>
+    <nav aria-label="Основная навигация">
+      <a href="#about">О конкурсе</a><a href="#nominations">Номинации</a><a href="#dates">Сроки</a><a href="#results">Итоги</a>
     </nav>
-  </header>
+    <a class="nav-cta" href="#apply">Подать заявку ↗</a>
+  </div>
+</header>
 
-  <main id="top">
-    <section class="hero">
-      <div class="hero-grid"></div>
-      <div class="hero-content">
-        <div class="eyebrow"><span class="live-dot"></span> Республиканский конкурс молодёжных медиацентров ПОО ДНР</div>
-        <h1>МедиаВектор:<br><span>Траектория роста</span></h1>
-        <p class="hero-lead">«МедиаВектор: Траектория роста» — конкурс молодёжных медиацентров профессиональных образовательных организаций Донецкой Народной Республики.</p>
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">Республиканский конкурс · 2026</div>
+        <h1>МедиаВектор:<br><em>Траектория роста</em></h1>
+        <p>Конкурс молодёжных медиацентров профессиональных образовательных организаций Донецкой Народной Республики.</p>
         <div class="hero-actions">
-          <a class="button button-primary" href="https://forms.yandex.ru/cloud/6addb4b84a052d85f35cf7c1" target="_blank" rel="noopener">Подать заявку <span>↗</span></a>
-          <a class="button button-ghost" href="#nominations">Выбрать номинацию <span>↓</span></a>
+          <a class="btn btn-white" href="docs/polozhenie.pdf" target="_blank" rel="noopener">Положение конкурса ↗</a>
+          <a class="btn btn-outline" href="#nominations">Узнать о номинациях</a>
         </div>
-        <div class="hero-note"><span class="note-icon">✳</span><span>Участие бесплатное<br><b>Формат — дистанционный</b></span></div>
+        <div class="hero-note">Твори. Рассказывай. Показывай возможности профессий.</div>
       </div>
-      <div class="hero-art" aria-label="Абстрактная графика медиа и творчества">
-        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
-        <div class="art-card card-video"><span class="play">▶</span><span>STORY / 01</span></div>
-        <div class="art-card card-photo"><span class="focus-corners">⌜</span><span class="photo-label">FOCUS</span></div>
-        <div class="art-sticker">ИДЕИ<br>В ДЕЛО<span>↗</span></div>
-        <div class="art-number">26</div>
-      </div>
-      <div class="hero-bottom">
-        <span>09 НОЯБРЯ — 18 ДЕКАБРЯ 2026</span><span class="scroll-hint">ЛИСТАЙТЕ ВНИЗ ↓</span>
-      </div>
-    </section>
+      <div class="hero-logo"><img src="assets/emblem.jpg" alt="Эмблема конкурса «МедиаВектор: Траектория роста»"></div>
+    </div>
+  </section>
 
-    <section class="quick-facts wrap" aria-label="Кратко о конкурсе">
-      <article><span class="fact-index">01 / ФОРМАТ</span><strong>Дистанционно</strong><p>Один конкурсный тур</p></article>
-      <article><span class="fact-index">02 / УЧАСТИЕ</span><strong>Бесплатно</strong><p>Для команд молодёжных медиацентров</p></article>
-      <article><span class="fact-index">03 / НОМИНАЦИИ</span><strong>2 направления</strong><p>Пост о профессии или видеоконтент</p></article>
-      <article><span class="fact-index">04 / РЕЗУЛЬТАТ</span><strong>Дипломы</strong><p>Победителям и лауреатам</p></article>
-    </section>
+  <div class="wrap quickfacts">
+    <div class="facts">
+      <div class="fact"><strong>9 ноября — 18 декабря</strong><span>Сроки проведения конкурса</span></div>
+      <div class="fact"><strong>2 номинации</strong><span>Пост о профессии и профориентационный видеоконтент</span></div>
+      <div class="fact"><strong>Участие бесплатное</strong><span>Для команд молодёжных медиацентров ПОО ДНР</span></div>
+    </div>
+  </div>
 
-    <section class="section wrap" id="about">
-      <div class="section-kicker">О КОНКУРСЕ</div>
-      <div class="about-layout">
-        <div><h2>Республиканский конкурс молодёжных медиацентров профессиональных образовательных организаций ДНР</h2></div>
-        <div class="about-copy"><p>Конкурс помогает студентам раскрыть творческий потенциал, развить практические навыки создания медиаконтента и рассказать о рабочих профессиях и специальностях, востребованных в регионе.</p><p>Создавайте креативные и информативные материалы, делитесь опытом и формируйте позитивный образ системы среднего профессионального образования.</p><div class="organizers"><div><span>УЧРЕДИТЕЛЬ</span><b>Министерство образования и науки ДНР</b></div><div><span>ОРГАНИЗАТОР</span><b>Донецкий республиканский институт развития образования</b></div></div></div>
+  <section id="about">
+    <div class="wrap about-grid">
+      <div>
+        <div class="section-kicker">О конкурсе</div>
+        <h2>Твой взгляд. Твоя профессия. Твоя история.</h2>
+        <p class="lead">«МедиаВектор: Траектория роста» — площадка для творческой самореализации студентов и развития молодёжных медиацентров.</p>
       </div>
-    </section>
+      <div class="about-panel">
+        <h3>Для чего проводится конкурс?</h3>
+        <p>Чтобы поддержать таланты студентов, развить практические навыки создания медиаконтента, популяризировать рабочие профессии и специальности, привлечь внимание молодёжи к перспективным отраслям промышленности и сферы услуг Донецкой Народной Республики.</p>
+      </div>
+    </div>
+  </section>
 
-    <section class="section nominations-section" id="nominations">
-      <div class="wrap">
-        <div class="section-heading"><div><div class="section-kicker">02 — НАПРАВЛЕНИЯ</div><h2>Выбери свой <em>формат.</em></h2></div><p>От одного медиацентра можно подать одну заявку в каждую номинацию. Для каждой номинации заполняется отдельная форма.</p></div>
-        <div class="nomination-grid">
-          <article class="nomination-card nomination-photo">
-            <div class="nomination-top"><span class="tag">НОМИНАЦИЯ 01</span><span class="card-symbol">▧</span></div>
-            <h3>Профессия<br>в фокусе</h3>
-            <p>Раскройте специфику одной профессии или специальности в авторском посте с фотографиями.</p>
-            <ul><li>Текст — не более 1 500 знаков</li><li>Не более 5 фотографий</li><li>В начале — название ПОО и ФИО автора(ов)</li><li>Заголовок поста — название работы</li></ul>
-            <div class="card-footer"><span>ПОСТ + ФОТО</span><a href="https://forms.yandex.ru/cloud/6addb4b84a052d85f35cf7c1" target="_blank" rel="noopener">Подать работу ↗</a></div>
-          </article>
-          <article class="nomination-card nomination-video">
-            <div class="nomination-top"><span class="tag">НОМИНАЦИЯ 02</span><span class="card-symbol">▶</span></div>
-            <h3>Лучший профориентационный видеоконтент</h3>
-            <p>Создайте видеоролик, способствующий профилактике асоциальных явлений и популяризации традиционных российских духовно-нравственных ценностей среди детей и молодёжи.</p>
-            <ul><li>Продолжительность — 2,5–3 минуты</li><li>Формат .mp4 или .mov, горизонтально, 16:9</li><li>Чистый звук без помех</li><li>В финальных титрах — название ПОО и ФИО автора(ов)</li><li>Ссылка на Яндекс Диск или Облако Mail.Ru должна работать весь конкурс</li></ul>
-            <div class="card-footer"><span>ВИДЕО</span><a href="https://forms.yandex.ru/cloud/6addb4b84a052d85f35cf7c1" target="_blank" rel="noopener">Подать работу ↗</a></div>
-          </article>
+  <section id="nominations" style="background:#eef7ff">
+    <div class="wrap">
+      <div class="section-kicker">Выбирай направление</div>
+      <h2>Две номинации — множество возможностей</h2>
+      <p class="lead">От одного молодёжного медиацентра по каждой номинации может быть подана одна заявка. ПОО может участвовать в обеих номинациях.</p>
+      <div class="cards">
+        <article class="card">
+          <span class="number">01</span>
+          <h3>«Профессия в фокусе»</h3>
+          <p>Создай публикацию, которая раскрывает специфику одной профессии или специальности и помогает увидеть её особенности.</p>
+          <div class="detail"><b>Формат:</b> пост до 1 500 знаков с фотографиями (не более 5). В начале — название ПОО и ФИО автора/авторов. Заголовок поста — название работы.<br><b>Команда:</b> не более двух авторов и руководитель работы.</div>
+        </article>
+        <article class="card">
+          <span class="number">02</span>
+          <h3>«Лучший профориентационный видеоконтент»</h3>
+          <p>Подготовь видеоролик, способствующий профилактике асоциальных явлений и популяризации традиционных российских духовно-нравственных ценностей среди детей и молодёжи.</p>
+          <div class="detail"><b>Формат:</b> 2,5–3 минуты, горизонтально, 16:9; .mp4 или .mov; чистый звук. В финальных титрах — наименование ПОО и ФИО автора/авторов.<br><b>Команда:</b> не более трёх авторов и руководитель работы.</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="timeline" id="dates">
+    <div class="wrap">
+      <div class="section-kicker">Календарь конкурса</div>
+      <h2>Важные даты</h2>
+      <p class="lead">Конкурс проходит в один этап и в дистанционном формате.</p>
+      <div class="steps">
+        <div class="step"><b>9–23 ноября</b><span>Приём заявок и конкурсных материалов (включительно)</span></div>
+        <div class="step"><b>23 ноября — 7 декабря</b><span>Оценивание конкурсных работ экспертным жюри</span></div>
+        <div class="step"><b>7–18 декабря</b><span>Формирование рейтинга и определение победителей и лауреатов</span></div>
+        <div class="step"><b>До 22 декабря</b><span>Публикация результатов конкурса (включительно)</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-kicker">Перед отправкой</div>
+      <h2>Что важно учесть участникам</h2>
+      <div class="requirements">
+        <div class="requirement"><h3>Электронная заявка</h3><p>Руководитель команды заполняет электронную форму и указывает ссылки на конкурсные материалы по выбранной номинации.</p></div>
+        <div class="requirement"><h3>Доступ к материалам</h3><p>Ссылки должны оставаться доступными для просмотра и скачивания до момента оглашения результатов.</p></div>
+        <div class="requirement"><h3>Авторские права</h3><p>Участники отвечают за соблюдение авторских прав, прав третьих лиц и получение необходимых согласий на использование изображений.</p></div>
+        <div class="requirement"><h3>Использование ИИ</h3><p>ИИ допускается только как вспомогательный инструмент. Основное содержание работы, ключевые визуальные образы и сценарий должны быть созданы автором.</p></div>
+      </div>
+      <div class="score">Оценивание: каждый критерий оценивается от 0 до 3 баллов. Максимальный балл за конкурсную работу — 21.</div>
+    </div>
+  </section>
+
+  <section class="apply" id="apply">
+    <div class="wrap apply-box">
+      <div><div class="section-kicker">Стань участником</div><h3>Готов показать свой медиацентр?</h3><p>Заполни электронную заявку и добавь ссылки на конкурсные материалы.</p></div>
+      <a class="btn btn-red" href="https://forms.yandex.ru/cloud/6addb4b84a052d85f35cf7c1" target="_blank" rel="noopener">Заполнить заявку ↗</a>
+    </div>
+  </section>
+
+  <section class="results" id="results">
+    <div class="wrap">
+      <div class="section-kicker">Главное событие</div>
+      <h2>Итоги конкурса</h2>
+      <p class="lead">Здесь будут опубликованы результаты, документы и наградные материалы конкурса.</p>
+      <div class="results-box">
+        <h3>Победители и лауреаты</h3>
+        <p>Победители (1 место) и лауреаты (2 и 3 место) награждаются дипломами. Остальные участники получают электронные сертификаты в течение 7 рабочих дней после оглашения результатов.</p>
+        <div class="result-actions">
+          <a class="btn btn-download" href="results/diplomy-i-sertifikaty.zip" download>↓ Скачать дипломы и сертификаты</a>
+          <a class="btn btn-muted" href="results/prikaz-ob-itogah.pdf" target="_blank" rel="noopener">Приказ об итогах конкурса ↗</a>
         </div>
+        <p class="results-hint">Наградные материалы и приказ станут доступны после их публикации организатором.</p>
       </div>
-    </section>
-
-    <section class="section wrap" id="timeline">
-      <div class="section-heading"><div><div class="section-kicker">03 — КАЛЕНДАРЬ</div><h2>Важные <em>даты.</em></h2></div><p>Планируйте работу команды заранее и проверьте доступность материалов перед отправкой.</p></div>
-      <div class="timeline">
-        <article class="timeline-item active"><div class="timeline-date">09 НОЯБРЯ — 23 НОЯБРЯ 2026</div><div class="timeline-line"></div><div class="timeline-body"><span class="timeline-label">ЭТАП 01</span><h3>Приём заявок</h3><p>Электронная подача заявки и ссылок на конкурсные материалы. Последний день — 23 ноября включительно.</p></div></article>
-        <article class="timeline-item"><div class="timeline-date">23 НОЯБРЯ — 07 ДЕКАБРЯ 2026</div><div class="timeline-line"></div><div class="timeline-body"><span class="timeline-label">ЭТАП 02</span><h3>Работа жюри</h3><p>Экспертная оценка конкурсных работ по установленным критериям.</p></div></article>
-        <article class="timeline-item"><div class="timeline-date">07 — 18 ДЕКАБРЯ 2026</div><div class="timeline-line"></div><div class="timeline-body"><span class="timeline-label">ЭТАП 03</span><h3>Подведение итогов</h3><p>Формирование итогового рейтинга и определение победителей и лауреатов.</p></div></article>
-        <article class="timeline-item"><div class="timeline-date">ДО 22 ДЕКАБРЯ 2026</div><div class="timeline-line"></div><div class="timeline-body"><span class="timeline-label">ЭТАП 04</span><h3>Публикация результатов</h3><p>Список победителей публикуется на официальных ресурсах организатора и министерства.</p></div></article>
+      <div class="docs">
+        <a class="doc-link" href="docs/polozhenie.pdf" target="_blank" rel="noopener">📄 Положение конкурса (PDF)</a>
+        <a class="doc-link" href="https://www.donriro.org" target="_blank" rel="noopener">🌐 Сайт организатора</a>
+        <a class="doc-link" href="https://vk.ru/donriro" target="_blank" rel="noopener">Ⓥ Группа организатора ВКонтакте</a>
       </div>
-      <div class="deadline-banner"><div><span class="deadline-overline">ПРИЁМ ЗАЯВОК ДО</span><strong>23.11.2026</strong><p>Не откладывайте подачу на последний день.</p></div><a class="button button-dark" href="https://forms.yandex.ru/cloud/6addb4b84a052d85f35cf7c1" target="_blank" rel="noopener">Заполнить форму ↗</a></div>
-    </section>
+    </div>
+  </section>
+</main>
 
-    <section class="rules-section" id="rules">
-      <div class="wrap">
-        <div class="section-kicker">04 — ПЕРЕД ОТПРАВКОЙ</div><h2>Проверьте <em>требования.</em></h2>
-        <div class="rules-grid">
-          <article><span class="rule-number">01</span><h3>Состав команды</h3><p><b>«Профессия в фокусе»</b> — не более двух авторов и руководитель работы.</p><p><b>Видеоконтент</b> — не более трёх авторов и руководитель работы.</p></article>
-          <article><span class="rule-number">02</span><h3>Заявка отдельно</h3><p>На каждую выбранную номинацию заполняется отдельная электронная заявка. От одного медиацентра в каждой номинации допускается одна заявка.</p></article>
-          <article><span class="rule-number">03</span><h3>Доступ к материалам</h3><p>Ссылки должны открываться для просмотра и скачивания до объявления результатов. Проверьте доступ без авторизации, если это возможно.</p></article>
-          <article><span class="rule-number">04</span><h3>Авторские права</h3><p>Команда отвечает за соблюдение авторских прав, прав на изображение и наличие необходимых согласий людей, попавших в работу.</p></article>
-          <article><span class="rule-number">05</span><h3>Использование ИИ</h3><p>ИИ разрешён только как вспомогательный инструмент. Основной текст, ключевые визуальные образы и сценарий должны быть созданы авторами.</p></article>
-          <article><span class="rule-number">06</span><h3>Участие бесплатное</h3><p>Организационный взнос не взимается. Конкурс проходит дистанционно в один тур.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section wrap" id="criteria">
-      <div class="section-heading"><div><div class="section-kicker">КРИТЕРИИ ОЦЕНКИ КОНКУРСНЫХ РАБОТ</div><h2>Критерии <em>оценивания.</em></h2></div><p>Каждый критерий оценивается от 0 до 3 баллов. Максимальный балл за конкурсную работу — 21.</p></div>
-      <div class="criteria-layout">
-        <article class="criteria-card"><div class="criteria-head"><span>НОМИНАЦИЯ 01</span><h3>Профессия в фокусе</h3></div><ol><li>Яркость, информативность и соответствие фотографий</li><li>Уместность и эстетичность оформления публикации</li><li>Глубина раскрытия особенностей профессиональной деятельности</li><li>Оригинальность и авторский подход</li><li>Качество подачи: грамотность и логика повествования</li></ol></article>
-        <article class="criteria-card"><div class="criteria-head"><span>НОМИНАЦИЯ 02</span><h3>Видеоконтент</h3></div><ol><li>Содержание, концепция и завершённость</li><li>Уникальность, оригинальность и эстетическая привлекательность</li><li>Целостность и логичность повествования</li><li>Операторская работа и качество изображения</li><li>Монтаж и синхронизация звука с видео</li><li>Работа в кадре: естественность и ясная подача</li><li>Внешний вид в кадре согласно требованиям Положения</li></ol></article>
-      </div>
-      <div class="score-scale"><div><b>0 баллов</b><span>Не соответствует</span></div><div><b>1 балл</b><span>Частично соответствует</span></div><div><b>2 балла</b><span>В основном соответствует</span></div><div><b>3 балла</b><span>Полностью соответствует</span></div></div>
-      <p class="small-note">В Положении указан максимальный балл 21. Для видеономинации перечислено семь критериев; для номинации «Профессия в фокусе» — пять. Оценивание проводится по критериям, приведённым в Положении.</p>
-    </section>
-
-    <section class="section results-section" id="results">
-      <div class="wrap">
-        <div class="section-kicker">ИТОГИ КОНКУРСА</div>
-        <div class="section-heading"><div><h2>Работы оценены.<br><em>Имена объявлены.</em></h2></div><p>Здесь будут опубликованы официальные результаты конкурса, дипломы победителей и сертификаты участников после утверждения итогов.</p></div>
-        <div class="results-panel">
-          <div class="results-status"><span class="status-dot"></span><div><b>Итоги конкурса</b><span>Официальные документы появятся после публикации организатором</span></div></div>
-          <div class="results-actions">
-            <a class="button button-primary" href="diplomy-i-sertifikaty.zip" download>Скачать дипломы и сертификаты <span>↓</span></a>
-            <a class="button button-outline" href="prikaz-ob-itogah.pdf" target="_blank" rel="noopener">Приказ об итогах конкурса <span>↗</span></a>
-          </div>
-          <p class="results-note">Ссылки на документы необходимо заменить на официальные файлы перед публикацией раздела</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="final-cta">
-      <div class="final-cta-inner wrap"><div class="section-kicker">ТВОЯ ТРАЕКТОРИЯ НАЧИНАЕТСЯ ЗДЕСЬ</div><h2>Расскажи свою<br><em>историю.</em></h2><p>Подготовь работу, проверь ссылки и отправь заявку до 23 ноября 2026 года.</p><a class="button button-primary" href="https://forms.yandex.ru/cloud/6addb4b84a052d85f35cf7c1" target="_blank" rel="noopener">Перейти к заявке <span>↗</span></a></div>
-      <div class="final-decoration">МВ<br><span>2026</span></div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="wrap footer-top"><a class="brand footer-brand" href="#top"><span class="brand-mark">М<span>В</span></span><span class="brand-name">МедиаВектор<small>Траектория роста</small></span></a><p>Республиканский конкурс молодёжных медиацентров<br>в образовательных организациях ДНР</p><a class="back-top" href="#top">НАВЕРХ ↑</a></div>
-    <div class="wrap footer-links"><div><span>ОРГАНИЗАТОР</span><a href="https://www.donriro.org" target="_blank" rel="noopener">ДонРИРО ↗</a></div><div><span>СОЦСЕТИ</span><a href="https://vk.ru/donriro" target="_blank" rel="noopener">ВКонтакте ↗</a></div><div><span>МИНИСТЕРСТВО</span><a href="http://mondnr.ru" target="_blank" rel="noopener">mondnr.ru ↗</a></div><div><span>ДОКУМЕНТ</span><a href="polozhenie.pdf" target="_blank" rel="noopener">Скачать Положение ↗</a></div></div>
-    <div class="wrap footer-bottom"><span>© 2026 · Информационная страница конкурса</span><span>Содержание подготовлено на основе Положения о конкурсе</span></div>
-  </footer>
-  <script src="script.js"></script>
+<footer>
+  <div class="wrap footer-inner">
+    <div><strong>МедиаВектор: Траектория роста</strong><p>Конкурс молодёжных медиацентров ПОО Донецкой Народной Республики · 2026</p></div>
+    <div class="footer-links"><a href="docs/polozhenie.pdf">Положение</a><a href="#nominations">Номинации</a><a href="#results">Итоги</a></div>
+  </div>
+</footer>
 </body>
 </html>
